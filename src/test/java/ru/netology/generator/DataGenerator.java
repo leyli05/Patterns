@@ -36,8 +36,6 @@ public class DataGenerator {
         Faker faker = new Faker(new Locale(locale));
         return faker.name().lastName() + " " + faker.name().firstName();
     }
-
-    //todo изменить формат вывода телефона
     public static String generatePhone(String locale) {
         Faker faker = new Faker(new Locale(locale));
         return faker.phoneNumber().phoneNumber();
