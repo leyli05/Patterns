@@ -31,8 +31,8 @@ public class CardDeliveryTest {
     }
 
     @BeforeMethod(description = "Открытие страницы перед каждым тестом")
-    public void setupMethod() {
-        open("http://localhost:9999/");
+    public void setUp() {
+        open("http://localhost:9999");
     }
     @AfterClass(description = "Отключение логгера после тестов")
     public void setDownClass() {
